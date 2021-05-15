@@ -1,0 +1,49 @@
+{
+  "name": "x-oss",
+  "version": "1.0.0",
+  "description": "OSS 文件服务",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "@alicloud/pop-core": "^1.7.10",
+    "ali-oss": "^6.13.2",
+    "egg": "^2.15.1",
+    "egg-cors": "^2.2.3",
+    "egg-oss": "^2.0.0",
+    "egg-scripts": "^1.2.0"
+  },
+  "devDependencies": {
+    "autod": "^3.1.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.15.0",
+    "egg-mock": "^4.0.1",
+    "eslint": "^7.17.0",
+    "eslint-config-egg": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --title=egg-server-x-oss",
+    "stop": "egg-scripts stop --title=egg-server-x-oss",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "mochu",
+  "license": "MIT"
+}

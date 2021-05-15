@@ -1,0 +1,11 @@
+logs/
+npm-debug.log
+node_modules/
+coverage/
+.idea/
+run/
+.DS_Store
+.vscode
+.nyc_output
+typings/**
+package-lock.json
